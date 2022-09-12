@@ -1,11 +1,11 @@
 import ToDoItem from './ToDoItem';
 
-function ToDoList() {
+function ToDoList(props) {
   return (
     <ul>
-      <ToDoItem item={'Attend a GIAthering'} />
-      <ToDoItem item={'Eat a big GIAlic'} />
-      <ToDoItem item={'Observe the GIAlaxy'} />
+      {props.xyz.map((item, idx) => (
+        <ToDoItem SingleToDo={item} key={idx} />
+      ))}
     </ul>
   );
 }

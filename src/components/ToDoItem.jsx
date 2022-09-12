@@ -1,5 +1,5 @@
 function ToDoItem(props) {
-  return <li>{props.item}</li>;
+  return <li>{props.SingleToDo}</li>;
 }
 
 export default ToDoItem;
